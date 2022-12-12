@@ -1,0 +1,1 @@
+listsplit([H|T], H, T).

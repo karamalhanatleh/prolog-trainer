@@ -1,0 +1,7 @@
+parent(ali,nmr).
+
+male(ali).
+famale(nmr).
+male(fhd).
+parent(ali,fhd).
+

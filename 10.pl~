@@ -1,0 +1,5 @@
+ppo(X,0,1).
+ppo(X,N,K):-
+    N1 is N1 - 1 ,
+    ppo(X,N1,K1),
+    K is X * K1.

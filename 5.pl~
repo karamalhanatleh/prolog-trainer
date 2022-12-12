@@ -1,0 +1,7 @@
+onroute(rome).
+onroute(Place):-
+    move(Place,Method,NewPlace),
+    onroute(NewPlace).
+move(home,taxi,halifax).
+move(halifax,train,gatwick).
+move(gatwick,plane,rome).

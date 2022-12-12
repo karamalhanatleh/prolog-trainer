@@ -1,0 +1,4 @@
+loves(romeo , juliet).
+loves(loves , romeo) :- loves(romeo , juliet).
+
+
