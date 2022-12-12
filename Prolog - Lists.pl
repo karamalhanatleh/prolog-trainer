@@ -1,0 +1,47 @@
+%Membership Operation
+list_member(X,[X|_]).
+list_member(X,[_|TAIL]) :-
+    list_member(X,TAIL).
+
+member(X,[X|T]).
+member(X,[_|T]):-
+    member(X,T).
+
+
+
+
+% Length Calculation
+count([] , 0) .
+count([X|T] , C):-
+    count(T , C1) ,
+
+
+
+
+    C is C1 + 1 .
+
+% sum list
+sum([] , 0) .
+sum([X|T] ,S):-
+    sum(T,S1),
+    S is S1+X.
+
+
+
+
+%list append
+append([] ,L,L) .
+append([H|T1] , L , [H|T]):-
+    append(T1 , L , T) .
+
+
+
+
+% min max
+max(X,Y,X):-
+    X>=Y,!.
+max(X,Y,Y):-
+    Y>X.
+
+
+
